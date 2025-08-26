@@ -24,7 +24,7 @@
 
     <div class="flex justify-evenly items-center gap-4 mt-8">
       <div class="bg-[#41ff6b1a] px-10 py-3 flex gap-3 rounded-full ">
-        <p class="font-bold">0</p>
+        <p id="heart-count" class="font-bold">0</p>
         <img class="w-6" src="./assets/heart.png" alt="">
       </div>
       <div class="flex items-center gap-4">
@@ -59,7 +59,7 @@
               <figure class="bg-[#ffe3e2] rounded-xl w-10 h-10">
                 <img src="./assets/emergency.png" alt="" class="w-6 rounded-xl" />
               </figure>
-              <i class="fa-regular fa-heart"></i>
+              <i id="" class="fa-regular fa-heart heart-btn"></i>
             </div>
 
             <div class="card-body text-left -mt-8">
@@ -71,87 +71,150 @@
               <p class="btn w-auto self-start bg-gray-200 px-2 rounded-full text-gray-500  text-sm">সার্বজনীন</p>
             </div>
             <div class="p-5 lg:flex gap-5">
-              <button id="cart-btn-1" class="btn text-black btn-block cart-btn mb-2 lg:w-1/2"><i
+              <button id="copy-btn-1" class="btn text-black btn-block cart-btn mb-2 lg:w-1/2"><i
                   class="fa-solid fa-copy"></i>Copy</button>
-              <button id="cart-btn-1" class="btn bg-[#00a63e] text-white btn-block cart-btn lg:w-1/2"><i
-                  class="fa-solid fa-phone"></i>
-                Call
-              </button>
+              <button id="call-btn-1" class="btn bg-[#00a63e] text-white btn-block call-btn lg:w-1/2"><i
+                  class="fa-solid fa-phone"></i>Call</button>
             </div>
           </div>
           <!-- Service card 2  -->
-          <div id="service-1" class="card bg-base-100 shadow-sm p-2">
+          <div id="service-2" class="card bg-base-100 shadow-sm p-2">
             <div class="flex justify-between items-center p-5">
               <figure class="bg-[#dfefff] rounded-xl w-10 h-10">
                 <img src="./assets/police.png" alt="" class="w-6 rounded-xl" />
               </figure>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-btn"></i>
             </div>
 
             <div class="card-body text-left -mt-8">
-              <h2 id="card-title-1" class="card-title">
+              <h2 id="card-title-2" class="card-title">
                 পুলিশ
               </h2>
               <p class="text-gray-500 -mt-2">Police</p>
               <p class="text-3xl font-bold mt-2">999</p>
               <p class="btn w-auto self-start bg-gray-200 px-2 rounded-full text-gray-500  text-sm">পুলিশ</p>
             </div>
-            <div class="p-5 flex gap-2">
-              <button id="cart-btn-1" class="btn text-black btn-block cart-btn w-1/2"><i
+            <div class="p-5 lg:flex gap-5">
+              <button id="copy-btn-2" class="btn text-black btn-block cart-btn mb-2 lg:w-1/2"><i
                   class="fa-solid fa-copy"></i>Copy</button>
-              <button id="cart-btn-1" class="btn bg-[#00a63e] text-white btn-block cart-btn w-1/2"><i
-                  class="fa-solid fa-phone"></i>
-                Call
-              </button>
+              <button id="call-btn-2" class="btn bg-[#00a63e] text-white btn-block call-btn lg:w-1/2"><i
+                  class="fa-solid fa-phone"></i>Call</button>
             </div>
           </div>
           <!-- Service card 3  -->
-          <div id="service-1" class="card bg-base-100 shadow-sm p-2">
+          <div id="service-3" class="card bg-base-100 shadow-sm p-2">
             <div class="flex justify-between items-center p-5">
               <figure class="bg-[#ffe3e2] rounded-xl w-10 h-10">
                 <img src="./assets/fire-service.png" alt="" class="w-6 rounded-xl" />
               </figure>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-btn"></i>
             </div>
 
             <div class="card-body text-left -mt-8">
-              <h2 id="card-title-1" class="card-title">
+              <h2 id="card-title-3" class="card-title">
                 ফায়ার সার্ভিস
               </h2>
               <p class="text-gray-500 -mt-2">Fire Service</p>
               <p class="text-3xl font-bold mt-2">999</p>
               <p class="btn w-auto self-start bg-gray-200 px-2 rounded-full text-gray-500  text-sm">ফায়ার</p>
             </div>
-            <div class="p-5 flex gap-2">
-              <button id="cart-btn-1" class="btn text-black btn-block cart-btn w-1/2"><i
+            <div class="p-5 lg:flex gap-5">
+              <button id="copy-btn-3" class="btn text-black btn-block cart-btn mb-2 lg:w-1/2"><i
                   class="fa-solid fa-copy"></i>Copy</button>
-              <button id="cart-btn-1" class="btn bg-[#00a63e] text-white btn-block cart-btn w-1/2"><i
-                  class="fa-solid fa-phone"></i>
-                Call
-              </button>
+              <button id="call-btn-3" class="btn bg-[#00a63e] text-white btn-block call-btn lg:w-1/2"><i
+                  class="fa-solid fa-phone"></i>Call</button>
             </div>
           </div>
+          <!-- Service card 4  -->
+          <div id="service-4" class="card bg-base-100 shadow-sm p-2">
+            <div class="flex justify-between items-center p-5">
+              <figure class="bg-[#ffe3e2] rounded-xl w-10 h-10">
+                <img src="./assets/ambulance.png" alt="" class="w-6 rounded-xl" />
+              </figure>
+              <i class="fa-regular fa-heart heart-btn"></i>
+            </div>
 
+            <div class="card-body text-left -mt-8">
+              <h2 id="card-title-4" class="card-title">
+              অ্যাম্বুলেন্স
+              </h2>
+              <p class="text-gray-500 -mt-2">Ambulance</p>
+              <p class="text-3xl font-bold mt-2">1994-999999</p>
+              <p class="btn w-auto self-start bg-gray-200 px-2 rounded-full text-gray-500  text-sm">স্বাস্থ্য</p>
+            </div>
+            <div class="p-5 lg:flex gap-5">
+              <button id="copy-btn-3" class="btn text-black btn-block cart-btn mb-2 lg:w-1/2"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button id="call-btn-3" class="btn bg-[#00a63e] text-white btn-block call-btn lg:w-1/2"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <!-- Service card 5  -->
+          <div id="service-4" class="card bg-base-100 shadow-sm p-2">
+            <div class="flex justify-between items-center p-5">
+              <figure class="bg-[#ffe3e2] rounded-xl w-10 h-10">
+                <img src="./assets/emergency.png" alt="" class="w-6 rounded-xl" />
+              </figure>
+              <i class="fa-regular fa-heart heart-btn"></i>
+            </div>
 
+            <div class="card-body text-left -mt-8">
+              <h2 id="card-title-4" class="card-title">
+              নারী ও শিশু সহায়তা
+              </h2>
+              <p class="text-gray-500 -mt-2">Women & Child Helpline</p>
+              <p class="text-3xl font-bold mt-2">109</p>
+              <p class="btn w-auto self-start bg-gray-200 px-2 rounded-full text-gray-500  text-sm">স্বাস্থ্য</p>
+            </div>
+            <div class="p-5 lg:flex gap-5">
+              <button id="copy-btn-3" class="btn text-black btn-block cart-btn mb-2 lg:w-1/2"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button id="call-btn-3" class="btn bg-[#00a63e] text-white btn-block call-btn lg:w-1/2"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <!-- Service card 6  -->
+          <div id="service-4" class="card bg-base-100 shadow-sm p-2">
+            <div class="flex justify-between items-center p-5">
+              <figure class="bg-[#ffe3e2] rounded-xl w-10 h-10">
+                <img src="./assets/emergency.png" alt="" class="w-6 rounded-xl" />
+              </figure>
+              <i class="fa-regular fa-heart heart-btn"></i>
+            </div>
 
-
-
+            <div class="card-body text-left -mt-8">
+              <h2 id="card-title-4" class="card-title">
+              দুদক
+              </h2>
+              <p class="text-gray-500 -mt-2">Anti-Corruption</p>
+              <p class="text-3xl font-bold mt-2">106</p>
+              <p class="btn w-auto self-start bg-gray-200 px-2 rounded-full text-gray-500  text-sm">স্বাস্থ্য</p>
+            </div>
+            <div class="p-5 lg:flex gap-5">
+              <button id="copy-btn-3" class="btn text-black btn-block cart-btn mb-2 lg:w-1/2"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button id="call-btn-3" class="btn bg-[#00a63e] text-white btn-block call-btn lg:w-1/2"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
 
         </div>
       </section>
 
       <!-- Aside -->
-      <aside id="history-box" class="col-span-6 lg:col-span-3">
+      <aside id="history-box" class="bg-white col-span-6 lg:col-span-3">
         <div class="bg-white p-5 rounded flex justify-between items-center">
           <h2 class="font-bold"><i class="fa-regular fa-clock mr-2"></i>Call History</h2>
-          <button class="btn w-auto self-start px-6 rounded-full text-white  text-sm bg-[#00a63e]" id="btn-clear">Clear</button>
-        </div>
-       
+          <button class="btn w-auto self-start px-6 rounded-full text-white  text-sm  bg-[#00a63e]"
+            id="btn-clear">Clear</button>
 
-        
-            
-          </div>
         </div>
+
+
+        <div id="history-container">
+
+        </div>
+
       </aside>
     </section>
     </section>
