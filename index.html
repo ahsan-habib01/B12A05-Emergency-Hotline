@@ -8,10 +8,14 @@
   <!-- dailyUI CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="">
-  <!-- start nav  -->
+  <!-- Nav Section  -->
   <nav class="w-11/12 mx-auto flex justify-between items-center py-5">
     <div class="nav-logo flex items-center gap-2">
       <img class="w-16" src="./assets/logo.png" alt="">
@@ -33,13 +37,134 @@
       </div>
   </nav>
 
-  <main>
-    <!-- Hero Section -->
-    <section class=" bg-gradient-to-r from-[#013122] via-[#006747] to-[#013223] py-5 text-center">
-        <img class="w-20 mx-auto" src="./assets/logo-dark.png" alt="">
-        <h1 class="text-white py-4 text-2xl font-bold">জরুরি সেবা ডিরেক্টরি</h1>
-        <h2 class="text-white text-lg">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of
-          Bangladesh</h2>
+  <!-- Hero Section -->
+  <section class=" bg-gradient-to-r from-[#013122] via-[#006747] to-[#013223] py-5 text-center">
+    <img class="w-20 mx-auto" src="./assets/logo-dark.png" alt="">
+    <h1 class="text-white py-4 text-2xl font-bold">জরুরি সেবা ডিরেক্টরি</h1>
+    <h2 class="text-white text-lg">Government Emergency Services at Your Fingertip – A Project by Government of the
+      People’s Republic of
+      Bangladesh</h2>
+  </section>
+
+  <!-- All Service Section -->
+  <main class="bg-[#41ff6b1a]">
+    <section id="services-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8">
+      <!-- Services -->
+      <section id="service-box" class="col-span-9">
+        <div class="service-cards grid grid-cols-3 gap-5">
+
+          <!-- Service card 1  -->
+          <div id="service-1" class="card bg-base-100 shadow-sm p-2">
+            <div class="flex justify-between items-center p-5">
+              <figure class="bg-[#ffe3e2] rounded-xl w-10 h-10">
+                <img src="./assets/emergency.png" alt="" class="w-6 rounded-xl" />
+              </figure>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card-body text-left -mt-8">
+              <h2 id="card-title-1" class="card-title">
+                জাতীয় জরুরি সেবা
+              </h2>
+              <p class="text-gray-500 -mt-2">National Emergency</p>
+              <p class="text-3xl font-bold mt-2">999</p>
+              <p class="btn w-auto self-start bg-gray-200 px-2 rounded-full text-gray-500  text-sm">সার্বজনীন</p>
+            </div>
+            <div class="p-5 flex gap-2">
+              <button id="cart-btn-1" class="btn text-black btn-block cart-btn w-1/2"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button id="cart-btn-1" class="btn bg-[#00a63e] text-white btn-block cart-btn w-1/2"><i
+                  class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <!-- Service card 2  -->
+          <div id="service-1" class="card bg-base-100 shadow-sm p-2">
+            <div class="flex justify-between items-center p-5">
+              <figure class="bg-[#dfefff] rounded-xl w-10 h-10">
+                <img src="./assets/police.png" alt="" class="w-6 rounded-xl" />
+              </figure>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card-body text-left -mt-8">
+              <h2 id="card-title-1" class="card-title">
+               পুলিশ
+              </h2>
+              <p class="text-gray-500 -mt-2">Police</p>
+              <p class="text-3xl font-bold mt-2">999</p>
+              <p class="btn w-auto self-start bg-gray-200 px-2 rounded-full text-gray-500  text-sm">পুলিশ</p>
+            </div>
+            <div class="p-5 flex gap-2">
+              <button id="cart-btn-1" class="btn text-black btn-block cart-btn w-1/2"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button id="cart-btn-1" class="btn bg-[#00a63e] text-white btn-block cart-btn w-1/2"><i
+                  class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <!-- Service card 1  -->
+          <div id="service-1" class="card bg-base-100 shadow-sm p-2">
+            <div class="flex justify-between items-center p-5">
+              <figure class="bg-[#ffe3e2] rounded-xl w-10 h-10">
+                <img src="./assets/fire-service.png" alt="" class="w-6 rounded-xl" />
+              </figure>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card-body text-left -mt-8">
+              <h2 id="card-title-1" class="card-title">
+              ফায়ার সার্ভিস
+              </h2>
+              <p class="text-gray-500 -mt-2">Fire Service</p>
+              <p class="text-3xl font-bold mt-2">999</p>
+              <p class="btn w-auto self-start bg-gray-200 px-2 rounded-full text-gray-500  text-sm">ফায়ার</p>
+            </div>
+            <div class="p-5 flex gap-2">
+              <button id="cart-btn-1" class="btn text-black btn-block cart-btn w-1/2"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button id="cart-btn-1" class="btn bg-[#00a63e] text-white btn-block cart-btn w-1/2"><i
+                  class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+      </section>
+
+      <!-- Aside -->
+      <aside id="history-box" class="col-span-3">
+        <div class="bg-white p-5 rounded">
+          <h2 class="font-bold mb-5">Have a Coupon</h2>
+          <div class="join">
+            <input class="input join-item" placeholder="Coupon" />
+            <button class="btn join-item rounded-r-xl bg-pink-500 text-white">
+              Apply
+            </button>
+          </div>
+        </div>
+        <div class="cart-box bg-white mt-10 p-5">
+          <h2 class="font-bold">Cart</h2>
+          <button class="btn my-2 border-pink-200" id="btn-clear">Clear</button>
+          <div class="space-y-5" id="cart-container"></div>
+          <div class="mt-5">
+            <h2>Total Price: <span id="total-price">0</span> TK</h2>
+            <h2>Total Quantity: <span id="total-quantity">0</span> Items</h2>
+            <button class="btn bg-pink-500 text-white btn-block mt-5">
+              Make Purchase
+            </button>
+          </div>
+        </div>
+      </aside>
+    </section>
     </section>
   </main>
 
