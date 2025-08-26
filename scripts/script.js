@@ -47,3 +47,7 @@ getElement('service-box').addEventListener('click', function (e) {
 });
 
 
+document.getElementById('btn-clear').addEventListener('click', function () {
+  const cartContainer = getElement('history-container');
+  cartContainer.innerHTML = '';
+});
