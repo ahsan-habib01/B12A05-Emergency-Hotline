@@ -16,13 +16,13 @@
 
 <body class="">
   <!-- Nav Section  -->
-  <nav class="w-11/12 mx-auto flex justify-between items-center py-5">
-    <div class="nav-logo flex items-center gap-2">
+  <nav class="w-11/12 mx-auto lg:flex lg:justify-between lg:items-center py-5">
+    <div class="nav-logo flex justify-center items-center gap-2">
       <img class="w-16" src="./assets/logo.png" alt="">
       <p class="text-2xl font-bold text-[#006747]">Emergency <br>Service</p>
     </div>
 
-    <div class="flex items-center gap-4">
+    <div class="flex justify-evenly items-center gap-4 mt-8">
       <div class="bg-[#41ff6b1a] px-10 py-3 flex gap-3 rounded-full ">
         <p class="font-bold">0</p>
         <img class="w-6" src="./assets/heart.png" alt="">
@@ -33,8 +33,8 @@
           <img class="w-6" src="./assets/coin.png" alt="">
         </div>
 
-        <button class="bg-[#00a63e] px-10 py-3 rounded-full text-white">2 Copy</button>
       </div>
+      <button class="bg-[#00a63e] px-10 py-3 rounded-full text-white">2 Copy</button>
   </nav>
 
   <!-- Hero Section -->
@@ -50,8 +50,8 @@
   <main class="bg-[#41ff6b1a]">
     <section id="services-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8">
       <!-- Services -->
-      <section id="service-box" class="col-span-9">
-        <div class="service-cards grid grid-cols-3 gap-5">
+      <section id="service-box" class="col-span-6 lg:col-span-9">
+        <div class="service-cards grid grid-cols-1 lg:grid-cols-3 gap-5">
 
           <!-- Service card 1  -->
           <div id="service-1" class="card bg-base-100 shadow-sm p-2">
@@ -70,10 +70,10 @@
               <p class="text-3xl font-bold mt-2">999</p>
               <p class="btn w-auto self-start bg-gray-200 px-2 rounded-full text-gray-500  text-sm">সার্বজনীন</p>
             </div>
-            <div class="p-5 flex gap-2">
-              <button id="cart-btn-1" class="btn text-black btn-block cart-btn w-1/2"><i
+            <div class="p-5 lg:flex gap-5">
+              <button id="cart-btn-1" class="btn text-black btn-block cart-btn mb-2 lg:w-1/2"><i
                   class="fa-solid fa-copy"></i>Copy</button>
-              <button id="cart-btn-1" class="btn bg-[#00a63e] text-white btn-block cart-btn w-1/2"><i
+              <button id="cart-btn-1" class="btn bg-[#00a63e] text-white btn-block cart-btn lg:w-1/2"><i
                   class="fa-solid fa-phone"></i>
                 Call
               </button>
@@ -90,7 +90,7 @@
 
             <div class="card-body text-left -mt-8">
               <h2 id="card-title-1" class="card-title">
-               পুলিশ
+                পুলিশ
               </h2>
               <p class="text-gray-500 -mt-2">Police</p>
               <p class="text-3xl font-bold mt-2">999</p>
@@ -105,7 +105,7 @@
               </button>
             </div>
           </div>
-          <!-- Service card 1  -->
+          <!-- Service card 3  -->
           <div id="service-1" class="card bg-base-100 shadow-sm p-2">
             <div class="flex justify-between items-center p-5">
               <figure class="bg-[#ffe3e2] rounded-xl w-10 h-10">
@@ -116,7 +116,7 @@
 
             <div class="card-body text-left -mt-8">
               <h2 id="card-title-1" class="card-title">
-              ফায়ার সার্ভিস
+                ফায়ার সার্ভিস
               </h2>
               <p class="text-gray-500 -mt-2">Fire Service</p>
               <p class="text-3xl font-bold mt-2">999</p>
@@ -141,26 +141,15 @@
       </section>
 
       <!-- Aside -->
-      <aside id="history-box" class="col-span-3">
-        <div class="bg-white p-5 rounded">
-          <h2 class="font-bold mb-5">Have a Coupon</h2>
-          <div class="join">
-            <input class="input join-item" placeholder="Coupon" />
-            <button class="btn join-item rounded-r-xl bg-pink-500 text-white">
-              Apply
-            </button>
-          </div>
+      <aside id="history-box" class="col-span-6 lg:col-span-3">
+        <div class="bg-white p-5 rounded flex justify-between items-center">
+          <h2 class="font-bold"><i class="fa-regular fa-clock mr-2"></i>Call History</h2>
+          <button class="btn w-auto self-start px-6 rounded-full text-white  text-sm bg-[#00a63e]" id="btn-clear">Clear</button>
         </div>
-        <div class="cart-box bg-white mt-10 p-5">
-          <h2 class="font-bold">Cart</h2>
-          <button class="btn my-2 border-pink-200" id="btn-clear">Clear</button>
-          <div class="space-y-5" id="cart-container"></div>
-          <div class="mt-5">
-            <h2>Total Price: <span id="total-price">0</span> TK</h2>
-            <h2>Total Quantity: <span id="total-quantity">0</span> Items</h2>
-            <button class="btn bg-pink-500 text-white btn-block mt-5">
-              Make Purchase
-            </button>
+       
+
+        
+            
           </div>
         </div>
       </aside>
