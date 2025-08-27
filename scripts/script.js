@@ -29,7 +29,7 @@ getElement('service-box').addEventListener('click', function (e) {
       callButton.parentNode.parentNode.children[1].children[1].innerText;
 
     const serviceNumber =
-      callButton.parentNode.parentNode.children[1].children[2].innerText;
+      callButton.parentNode.parentNode.children[1].children[2].children[0].innerText;
 
     const date = new Date().toLocaleTimeString();
 
