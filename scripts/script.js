@@ -29,7 +29,8 @@ getElement('service-box').addEventListener('click', function (e) {
       callButton.parentNode.parentNode.children[1].children[1].innerText;
 
     const serviceNumber =
-      callButton.parentNode.parentNode.children[1].children[2].children[0].innerText;
+      callButton.parentNode.parentNode.children[1].children[2].children[0]
+        .innerText;
 
     const date = new Date().toLocaleTimeString();
 
@@ -62,6 +63,22 @@ getElement('service-box').addEventListener('click', function (e) {
           </div>
     `;
     callHistoryContainer.append(callHistoryDiv);
+  }
+});
+
+// Copy Button
+getElement('service-box').addEventListener('click', function (e) {
+  if (e.target.className.includes('copy-btn')) {
+    copyButton = e.target;
+
+    const serviceNumber =
+      copyButton.parentNode.parentNode.children[1].children[2].children[0]
+        .innerText;
+
+    console.log(serviceNumber);
+    navigator.clipboard.writeText(serviceNumber).then(() => {
+      alert(`নম্বর কপি হয়েছে: ${serviceNumber}`);
+    });
   }
 });
 
