@@ -76,13 +76,12 @@ getElement('service-box').addEventListener('click', function (e) {
 
     navigator.clipboard.writeText(serviceNumber).then(() => {
       alert(`নম্বর কপি হয়েছে: ${serviceNumber}`);
+
+      const copyCount = getElement('copy-count').innerText;
+      const copyCountIncrement = Number(copyCount) + 1;
+
+      getElement('copy-count').innerText = copyCountIncrement;
     });
-
-    const copyCount = getElement('copy-count').innerText;
-    const copyCountIncrement = Number(copyCount) + 1;
-
-    getElement('copy-count').innerText = copyCountIncrement;
-
   }
 });
 
