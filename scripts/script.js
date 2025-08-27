@@ -4,6 +4,7 @@ function getElement(id) {
   return element;
 }
 
+// Heart Button
 getElement('service-box').addEventListener('click', function (e) {
   if (e.target.className.includes('heart-btn')) {
     // console.log('heart btn clicked');
@@ -16,12 +17,16 @@ getElement('service-box').addEventListener('click', function (e) {
   }
 });
 
+// Call Button
 getElement('service-box').addEventListener('click', function (e) {
   if (e.target.className.includes('call-btn')) {
     const callButton = e.target;
 
     const serviceTitle =
       callButton.parentNode.parentNode.children[1].children[0].innerText;
+
+    const subTitle =
+      callButton.parentNode.parentNode.children[1].children[1].innerText;
 
     const serviceNumber =
       callButton.parentNode.parentNode.children[1].children[2].innerText;
@@ -30,15 +35,29 @@ getElement('service-box').addEventListener('click', function (e) {
 
     const callHistoryContainer = getElement('history-container');
 
+    // coin
+    const coinCount = getElement('coin-count').innerText;
+    const coinCountDecrease = Number(coinCount) - 20;
+
+    if (coinCountDecrease >= 0) {
+      alert(`Calling ${subTitle} ${serviceNumber}...`);
+    } else {
+      alert('আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে ।');
+      return;
+    }
+
+    getElement('coin-count').innerText = coinCountDecrease;
+
+    // call history
     const callHistoryDiv = document.createElement('div');
     callHistoryDiv.innerHTML = `
           <div class="px-3">
             <div class="p-3 rounded-xl bg-[#fafafa] mb-2 flex justify-between items-center">
               <div>
-                <h1 class="font-semibold">${serviceTitle}</h1>
-                <p>${serviceNumber}</p>
+                <h1 class="text-sm font-semibold">${serviceTitle}</h1>
+                <p class="text-sm">${serviceNumber}</p>
               </div>
-              <p>${date}</p>
+              <p class="text-sm">${date}</p>
             </div>
           </div>
     `;
@@ -46,7 +65,7 @@ getElement('service-box').addEventListener('click', function (e) {
   }
 });
 
-
+// Clear Button
 document.getElementById('btn-clear').addEventListener('click', function () {
   const cartContainer = getElement('history-container');
   cartContainer.innerHTML = '';
