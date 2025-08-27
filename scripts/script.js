@@ -7,8 +7,7 @@ function getElement(id) {
 // Heart Button
 getElement('service-box').addEventListener('click', function (e) {
   if (e.target.className.includes('heart-btn')) {
-    // console.log('heart btn clicked');
-    const heartButton = e.target;
+    // const heartButton = e.target;
 
     const heartCount = getElement('heart-count').innerText;
     const heartCountIncrement = Number(heartCount) + 1;
@@ -75,10 +74,15 @@ getElement('service-box').addEventListener('click', function (e) {
       copyButton.parentNode.parentNode.children[1].children[2].children[0]
         .innerText;
 
-    console.log(serviceNumber);
     navigator.clipboard.writeText(serviceNumber).then(() => {
       alert(`নম্বর কপি হয়েছে: ${serviceNumber}`);
     });
+
+    const copyCount = getElement('copy-count').innerText;
+    const copyCountIncrement = Number(copyCount) + 1;
+
+    getElement('copy-count').innerText = copyCountIncrement;
+
   }
 });
 
