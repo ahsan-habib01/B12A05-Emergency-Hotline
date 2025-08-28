@@ -40,9 +40,9 @@ getElement('service-box').addEventListener('click', function (e) {
     const coinCountDecrease = Number(coinCount) - 20;
 
     if (coinCountDecrease >= 0) {
-      alert(`Calling ${subTitle} ${serviceNumber}...`);
+      alert(`📞 Calling ${subTitle} ${serviceNumber}...`);
     } else {
-      alert('আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে ।');
+      alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে ।');
       return;
     }
 
@@ -75,7 +75,7 @@ getElement('service-box').addEventListener('click', function (e) {
         .innerText;
 
     navigator.clipboard.writeText(serviceNumber).then(() => {
-      alert(`নম্বর কপি হয়েছে: ${serviceNumber}`);
+      alert(`📋 নম্বর কপি হয়েছে: ${serviceNumber}`);
 
       const copyCount = getElement('copy-count').innerText;
       const copyCountIncrement = Number(copyCount) + 1;
